@@ -29,19 +29,20 @@
 	);
 
 // Palette.
+	// Red / white / blue (USA) theme.
 	$palette: (
-		bg:					#242943,
-		bg-alt:				#2a2f4a,
+		bg:					#0b1f3a,
+		bg-alt:				#122a4d,
 		fg:					#ffffff,
 		fg-bold:			#ffffff,
 		fg-light:			rgba(244,244,255,0.2),
 		border:				rgba(212,212,255,0.1),
 		border-bg:			rgba(212,212,255,0.035),
-		highlight:			#9bf1ff,
-		accent1:			#6fc3df,
-		accent2:			#8d82c4,
-		accent3:			#ec8d81,
-		accent4:			#e7b788,
-		accent5:			#8ea9e8,
-		accent6:			#87c5a4
+		highlight:			#d1263f,
+		accent1:			#3f6fb4,
+		accent2:			#c8102e,
+		accent3:			#1f3864,
+		accent4:			#a11d2f,
+		accent5:			#5b84c4,
+		accent6:			#e0455a
 	);
