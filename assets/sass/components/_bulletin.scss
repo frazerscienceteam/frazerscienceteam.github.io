@@ -1,0 +1,130 @@
+///
+/// Bulletin (News + Carousel) box
+/// Custom component for Frazer Science Team
+///
+
+	#bulletin {
+		@include padding(2em, 0, (0, 0, 3em, 0));
+
+		> .inner {
+			margin: 0 auto;
+			max-width: _size(inner);
+			width: calc(100% - 6em);
+
+			@include breakpoint('<=small') {
+				width: calc(100% - 3em);
+			}
+		}
+
+		.bulletin-box {
+			@include vendor('display', 'flex');
+			background-color: #ffffff;
+			border-left: solid 10px _palette(highlight);
+			border-right: solid 10px _palette(accent1);
+			color: #1c1c1c;
+
+			@include breakpoint('<=medium') {
+				@include vendor('flex-direction', 'column');
+			}
+		}
+
+		.bulletin-news,
+		.bulletin-carousel {
+			@include padding(2em, 2em);
+			width: 50%;
+
+			@include breakpoint('<=medium') {
+				width: 100%;
+			}
+		}
+
+		.bulletin-news {
+			border-right: solid 1px rgba(0,0,0,0.1);
+
+			@include breakpoint('<=medium') {
+				border-right: 0;
+				border-bottom: solid 1px rgba(0,0,0,0.1);
+			}
+
+			h3 {
+				color: #1c1c1c;
+				font-size: 1em;
+				font-weight: _font(weight-bold);
+				letter-spacing: _font(letter-spacing-alt);
+				text-transform: uppercase;
+				margin-bottom: 1em;
+			}
+
+			.news-item {
+				margin-bottom: 1.5em;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				h4 {
+					color: #1c1c1c;
+					font-size: 1em;
+					margin-bottom: 0.35em;
+				}
+
+				p {
+					color: #454545;
+					font-size: 0.85em;
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		.bulletin-carousel {
+			.carousel {
+				position: relative;
+				overflow: hidden;
+				width: 100%;
+				padding-top: 66.66%;
+				background-color: _palette(bg);
+			}
+
+			.carousel-slide {
+				@include vendor('transition', 'opacity 0.6s ease');
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 0;
+
+				&.active {
+					opacity: 1;
+				}
+
+				img {
+					display: block;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+
+			.carousel-dots {
+				text-align: center;
+				margin-top: 0.85em;
+
+				.dot {
+					display: inline-block;
+					width: 0.6em;
+					height: 0.6em;
+					margin: 0 0.25em;
+					border-radius: 100%;
+					background-color: rgba(0,0,0,0.2);
+					cursor: pointer;
+
+					@include vendor('transition', 'background-color 0.2s ease');
+
+					&.active {
+						background-color: _palette(highlight);
+					}
+				}
+			}
+		}
+	}

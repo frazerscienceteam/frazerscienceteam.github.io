@@ -42,6 +42,7 @@
 
 		h1 {
 			font-size: 3.25em;
+			text-transform: uppercase;
 		}
 
 		> .inner {
@@ -53,6 +54,7 @@
 			));
 			padding: 0 !important;
 			position: relative;
+			text-align: center;
 			z-index: 2;
 
 			.image {
@@ -61,19 +63,18 @@
 
 			header {
 				width: auto;
+				margin-left: auto;
+				margin-right: auto;
 
 				> :first-child {
 					width: auto;
-
-					&:after {
-						max-width: 100%;
-					}
 				}
 			}
 
 			.content {
 				@include vendor('display', 'flex');
 				@include vendor('align-items', 'center');
+				@include vendor('justify-content', 'center');
 				margin: 0 0 _size(element-margin) 0;
 
 				> * {
