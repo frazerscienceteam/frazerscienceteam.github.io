@@ -22,5 +22,36 @@
 		&.alt {
 			background-color: transparent;
 			border-bottom: solid 1px _palette(border);
+
+			#one {
+				> .inner {
+					background-color: #ffffff;
+					color: #1c1c1c;
+					padding: 3em;
+					box-shadow: 0 0.5em 3em rgba(0,0,0,0.25);
+
+					@include breakpoint('<=small') {
+						padding: 2em 1.5em;
+					}
+
+					h1, h2, h3, h4, h5, h6 {
+						color: #1c1c1c;
+					}
+
+					p {
+						color: #333333;
+					}
+
+					strong, b {
+						color: #1c1c1c;
+					}
+
+					hr {
+						border: 0;
+						border-top: solid 1px rgba(0,0,0,0.1);
+						margin: 2em 0;
+					}
+				}
+			}
 		}
 	}

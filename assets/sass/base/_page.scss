@@ -34,7 +34,10 @@
 		}
 
 	body {
-		background: _palette(bg);
+		background-color: _palette(bg);
+		background-image: linear-gradient(135deg, #0a1c33 0%, #1a3454 45%, #20395c 70%, #0a1c33 100%);
+		background-attachment: fixed;
+		background-size: cover;
 
 		// Stops initial animations until page loads.
 			&.is-preload {

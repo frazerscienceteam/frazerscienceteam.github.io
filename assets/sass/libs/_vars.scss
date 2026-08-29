@@ -29,20 +29,20 @@
 	);
 
 // Palette.
-	// Red / white / blue (USA) theme.
+	// Red / white / blue (USA) theme — muted, low-saturation tones.
 	$palette: (
-		bg:					#0b1f3a,
-		bg-alt:				#122a4d,
+		bg:					#0e2038,
+		bg-alt:				#15304f,
 		fg:					#ffffff,
 		fg-bold:			#ffffff,
 		fg-light:			rgba(244,244,255,0.2),
 		border:				rgba(212,212,255,0.1),
 		border-bg:			rgba(212,212,255,0.035),
-		highlight:			#d1263f,
-		accent1:			#3f6fb4,
-		accent2:			#c8102e,
-		accent3:			#1f3864,
-		accent4:			#a11d2f,
-		accent5:			#5b84c4,
-		accent6:			#e0455a
+		highlight:			#b8465c,
+		accent1:			#4d6d94,
+		accent2:			#9c3b4a,
+		accent3:			#33465f,
+		accent4:			#85333f,
+		accent5:			#6f8caf,
+		accent6:			#c17886
 	);

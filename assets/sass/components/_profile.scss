@@ -1,0 +1,119 @@
+///
+/// Profile (coach bio) blocks + sponsor image grid
+/// Custom components for Frazer Science Team
+///
+
+	.profile {
+		@include vendor('display', 'flex');
+		@include vendor('align-items', 'flex-start');
+		margin-bottom: 2.5em;
+
+		.profile-text {
+			@include vendor('flex-grow', '1');
+			padding-right: 3em;
+		}
+
+		.profile-photo {
+			@include vendor('flex-shrink', '0');
+			text-align: center;
+			width: 30%;
+
+			img {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+
+			.profile-meta {
+				color: #555555;
+				font-size: 0.8em;
+				line-height: 1.6;
+				margin-top: 1em;
+			}
+		}
+
+		.profile-role {
+			color: _palette(accent1);
+			font-size: 0.85em;
+			font-weight: _font(weight-bold);
+			letter-spacing: _font(letter-spacing-alt);
+			margin-bottom: 1em;
+			text-transform: uppercase;
+		}
+
+		&.reverse {
+			@include vendor('flex-direction', 'row-reverse');
+
+			.profile-text {
+				padding-right: 0;
+				padding-left: 3em;
+			}
+		}
+
+		@include breakpoint('<=medium') {
+			@include vendor('flex-direction', 'column');
+
+			.profile-text {
+				order: 2;
+				padding: 1.5em 0 0 0;
+			}
+
+			.profile-photo {
+				order: 1;
+				width: 60%;
+				margin: 0 auto;
+			}
+
+			&.reverse {
+				@include vendor('flex-direction', 'column');
+
+				.profile-text {
+					padding: 1.5em 0 0 0;
+				}
+			}
+		}
+
+		@include breakpoint('<=small') {
+			.profile-photo {
+				width: 100%;
+			}
+		}
+	}
+
+	.profile-divider {
+		border: 0;
+		border-top: solid 1px rgba(0,0,0,0.1);
+		margin: 2.5em 0;
+	}
+
+	.sponsor-grid {
+		@include vendor('display', 'flex');
+		@include vendor('flex-wrap', 'wrap');
+		@include vendor('align-items', 'center');
+		@include vendor('justify-content', 'center');
+
+		.sponsor-logo {
+			@include padding(1.5em, 1.5em);
+			text-align: center;
+			width: 33.333%;
+
+			img {
+				display: inline-block;
+				max-width: 100%;
+				max-height: 8em;
+				width: auto;
+			}
+		}
+
+		@include breakpoint('<=small') {
+			.sponsor-logo {
+				width: 50%;
+			}
+		}
+
+		@include breakpoint('<=xsmall') {
+			.sponsor-logo {
+				width: 100%;
+			}
+		}
+	}
