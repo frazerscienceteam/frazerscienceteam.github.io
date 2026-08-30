@@ -66,12 +66,33 @@
 					color: #1c1c1c;
 					font-size: 1em;
 					margin-bottom: 0.35em;
+
+					a {
+						border: 0;
+						color: #1c1c1c;
+
+						&:hover {
+							color: _palette(highlight);
+						}
+					}
 				}
 
 				p {
 					color: #454545;
 					font-size: 0.85em;
 					margin-bottom: 0;
+				}
+			}
+
+			.news-more {
+				font-size: 0.85em;
+				font-weight: _font(weight-bold);
+				margin-top: 1.5em;
+				margin-bottom: 0;
+
+				a {
+					border: 0;
+					color: _palette(highlight);
 				}
 			}
 		}

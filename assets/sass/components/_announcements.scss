@@ -1,0 +1,61 @@
+///
+/// Announcement grid (News archive page)
+/// Custom component for Frazer Science Team
+///
+
+	.announcement-grid {
+		column-count: 2;
+		column-gap: 3em;
+		column-rule: solid 1px rgba(0,0,0,0.1);
+
+		@include breakpoint('<=medium') {
+			column-count: 1;
+		}
+	}
+
+	.announcement {
+		break-inside: avoid;
+		margin-bottom: 3em;
+		text-align: center;
+
+		.announcement-date {
+			color: #888888;
+			font-size: 0.8em;
+			letter-spacing: _font(letter-spacing-alt);
+			margin-bottom: 0.5em;
+			text-transform: uppercase;
+		}
+
+		h2 {
+			color: #222f4d;
+			font-size: 1.25em;
+			line-height: 1.4;
+			margin-bottom: 1.25em;
+			text-transform: uppercase;
+		}
+
+		.image.main {
+			margin-bottom: 1.25em;
+		}
+
+		p {
+			color: #333333;
+			text-align: left;
+		}
+
+		ul {
+			color: #333333;
+			list-style: disc;
+			margin: 0 0 1em 0;
+			padding-left: 1.5em;
+			text-align: left;
+
+			li {
+				margin-bottom: 0.35em;
+			}
+		}
+
+		strong, b {
+			color: #1c1c1c;
+		}
+	}

@@ -13,7 +13,7 @@
 
 	#header {
 		@include vendor('display', 'flex');
-		background-color: rgba(21,48,79,0.7);
+		background-color: transparentize(_palette(bg-alt), 0.3);
 		@include vendor('backdrop-filter', 'blur(10px)');
 		box-shadow: 0 0 0.25em 0 rgba(0,0,0,0.15);
 		cursor: default;
@@ -38,27 +38,21 @@
 			padding: 0 1.5em;
 
 			strong {
-				@include vendor('transition', (
-					'background-color #{_duration(transition)} ease-in-out',
-					'color #{_duration(transition)} ease-in-out'
-				));
-				background-color: _palette(fg-bold);
-				color: _palette(bg);
+				@include vendor('transition', 'color #{_duration(transition)} ease-in-out');
+				color: _palette(fg-bold);
 				display: inline-block;
 				line-height: 1.65em;
-				margin-right: 0.325em;
-				padding: 0 0.125em 0 (_font(letter-spacing-alt) + 0.125em);
 			}
 
 			&:hover {
 				strong {
-					background-color: _palette(highlight);
+					color: _palette(highlight);
 				}
 			}
 
 			&:active {
 				strong {
-					background-color: desaturate(darken(_palette(highlight), 15), 5);
+					color: desaturate(darken(_palette(highlight), 15), 5);
 				}
 			}
 		}

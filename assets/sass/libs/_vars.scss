@@ -29,20 +29,20 @@
 	);
 
 // Palette.
-	// Red / white / blue (USA) theme — muted, low-saturation tones.
+	// Frazer Science Team palette: navy, brick red, muted blue, cream, white.
 	$palette: (
-		bg:					#0e2038,
-		bg-alt:				#15304f,
+		bg:					#222f4d,
+		bg-alt:				#1a2440,
 		fg:					#ffffff,
 		fg-bold:			#ffffff,
-		fg-light:			rgba(244,244,255,0.2),
-		border:				rgba(212,212,255,0.1),
-		border-bg:			rgba(212,212,255,0.035),
-		highlight:			#b8465c,
-		accent1:			#4d6d94,
-		accent2:			#9c3b4a,
-		accent3:			#33465f,
-		accent4:			#85333f,
-		accent5:			#6f8caf,
-		accent6:			#c17886
+		fg-light:			rgba(222,204,176,0.25),
+		border:				rgba(222,204,176,0.12),
+		border-bg:			rgba(222,204,176,0.04),
+		highlight:			#8a2829,
+		accent1:			#6489a1,
+		accent2:			#6e2021,
+		accent3:			#48657a,
+		accent4:			#deccb0,
+		accent5:			#7ea0b6,
+		accent6:			#a23f3f
 	);
