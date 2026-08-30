@@ -9,7 +9,7 @@
 	#banner {
 		@include vendor('align-items', 'center');
 		@include vendor('display', 'flex');
-		@include padding(6em, 0, (4em, 0, 6em, 0));
+		@include padding(3em, 0, (2em, 0, 2em, 0));
 		border-bottom: 0 !important;
 		cursor: default;
 		height: auto;
