@@ -9,7 +9,7 @@
 	#banner {
 		@include vendor('align-items', 'center');
 		@include vendor('display', 'flex');
-		@include padding(6em, 0, (3em, 0, 3em, 0));
+		@include padding(6em, 0, (4em, 0, 6em, 0));
 		border-bottom: 0 !important;
 		cursor: default;
 		height: auto;
@@ -58,7 +58,7 @@
 				max-width: 42em;
 
 				> * {
-					margin-bottom: 1em;
+					margin-bottom: 1.5em;
 					width: 100%;
 				}
 
@@ -70,6 +70,7 @@
 					font-size: 1em;
 					font-weight: _font(weight);
 					letter-spacing: _font(letter-spacing);
+					line-height: 1.7;
 					text-align: left;
 					text-transform: none;
 				}
