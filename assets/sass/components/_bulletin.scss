@@ -108,6 +108,9 @@
 
 			.carousel-slide {
 				@include vendor('transition', 'opacity 0.6s ease');
+				border: 0;
+				cursor: pointer;
+				display: block;
 				position: absolute;
 				top: 0;
 				left: 0;
