@@ -43,6 +43,17 @@
 			text-align: left;
 		}
 
+		.announcement-subhead {
+			color: #222f4d;
+			font-size: 0.95em;
+			font-weight: _font(weight-bold);
+			letter-spacing: _font(letter-spacing-alt);
+			margin-top: 1.75em;
+			margin-bottom: 0.5em;
+			text-align: left;
+			text-transform: uppercase;
+		}
+
 		ul {
 			color: #333333;
 			list-style: disc;
